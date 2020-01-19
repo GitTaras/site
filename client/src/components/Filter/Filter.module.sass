@@ -1,0 +1,44 @@
+.wrapper
+  display: flex
+  width: 55vw
+  max-width: 600px
+  padding: 10px 0
+  box-sizing: border-box
+  margin: 10px 0
+  flex-direction: column
+  @media (max-width: 480px)
+    width: 70vw
+
+  .row
+    display: flex
+    align-items: center
+    margin: 15px 0
+    color: #3c4e73
+    @media (max-width: 480px)
+      flex-direction: column
+      margin: 3px 0
+
+    .select
+      width: 100%
+      margin: 0 10px
+      @media (max-width: 480px)
+        margin: 5px 0
+
+    .price
+      margin-right: 20px
+      @media (max-width: 480px)
+        margin-bottom: 10px
+
+    .range
+      display: flex
+      width: 100%
+      @media (max-width: 480px)
+        width: 90%
+        margin-bottom: 15px
+
+    .buttons
+      display: flex
+      width: 100%
+      justify-content: space-around
+
+

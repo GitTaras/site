@@ -1,0 +1,159 @@
+.wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #3EA9F5
+  height: 100%
+  flex: 1
+  justify-content: stretch
+  overflow: auto
+  padding-bottom: 120px
+
+  .header
+    display: flex
+    width: 90%
+    justify-content: space-between
+    max-width: 1010px
+    padding: 26px 49px
+    box-sizing: border-box
+    @media (max-width: 480px)
+      padding: 13px 5px
+
+  .container
+    display: flex
+    flex: 1
+    flex-direction: column
+    padding: 0 20px
+    box-sizing: border-box
+    max-width: 562px
+    @media (max-width: 600px)
+      padding: 0 60px
+    @media (max-width: 400px)
+      padding: 0 30px
+
+    .mainText
+      color: #FFFFFF
+      text-transform: uppercase
+      font-size: 45px
+      font-weight: 600
+      letter-spacing: 0
+      margin: 100px 0 0 0
+      text-align: center
+
+    .extraText
+      color: #FFFFFF
+      font-size: 18px
+      font-weight: 500
+      line-height: 27px
+      text-align: center
+      margin: 10px 15px 30px 15px
+
+    .wrapperInput
+      display: flex
+      flex-direction: column
+
+      .serverError
+        display: flex
+        justify-content: center
+        color: #FFFFFF
+        border: 1px solid #b72522
+        font-size: 13px
+        padding: 5px 15px
+        box-sizing: border-box
+        margin: 7px 0
+
+      .row
+        display: flex
+        justify-content: space-between
+        @media (max-width: 630px)
+          flex-direction: column
+
+    .containerAgreement
+      display: flex
+      padding: 20px
+      align-items: center
+      @media screen and (max-width: 480px)
+        font-size: 13px
+
+      span
+        color: #FFFFFF
+        padding-left: 10px
+
+        a
+          color: #FFFFFF
+          padding-left: 5px
+
+      .NDA
+        text-decoration-line: underline
+        cursor: pointer
+
+    .containerInput
+      display: flex
+      margin: 5px
+
+    .containerRole
+      display: flex
+      border: 1px solid #fff
+      height: 70px
+      align-items: center
+      margin: 25px 5px 0 5px
+
+      .radioBtn
+        display: flex
+        justify-content: center
+        flex: 1
+
+      .radioLabel
+        display: flex
+        flex: 10
+        flex-direction: column
+        color: #FFFFFF
+
+        label:first-child
+          font-size: 22px
+          @media screen and (max-width: 480px)
+            font-size: 18px
+
+        label:last-child
+          font-size: 11px
+          @media screen and (max-width: 480px)
+            font-size: 10px
+
+
+    .containerError
+      display: flex
+      border: 1px solid #b72522
+      font-size: 13px
+      color: white
+      padding: 5px 15px
+      box-sizing: border-box
+      justify-content: center
+      margin: 7px
+
+    .createAccount
+      display: flex
+      margin: 0 5px
+
+.info
+  display: flex
+  color: #9ca8b7
+  max-width: 1025px
+  margin: 0 auto
+
+  @media (max-width: 630px)
+    flex-direction: column
+
+  .column
+    display: flex
+    flex-direction: column
+    flex: 1
+    padding: 60px 48px
+    box-sizing: border-box
+    line-height: 30px
+    font-size: 16px
+    font-weight: 500
+
+    span
+      font-size: 16px
+      font-weight: 500
+      color: #363945

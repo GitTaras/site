@@ -1,0 +1,24 @@
+FROM node:10.15.3
+
+ARG NODE_ENV="production"
+
+RUN mkdir /server
+
+RUN mkdir -p /var/www/html/images
+
+WORKDIR /server
+
+COPY package*.json ./
+
+RUN npm install -g sequelize-cli
+
+#get only needed dependences from package.json
+RUN npm install --production
+
+COPY . .
+
+EXPOSE 3001
+
+RUN npm run build
+
+CMD node ./dist/index.js

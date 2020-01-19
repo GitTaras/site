@@ -1,0 +1,141 @@
+.rwt__tablist:not([aria-orientation="vertical"]) .rwt__tab[aria-selected="true"]:after
+  border-bottom: 3px solid #28D2D1 !important
+
+.rwt__tablist:not([aria-orientation="vertical"])
+  border: 0 !important
+
+.rwt__tab[aria-selected="false"]:hover, .rwt__tab:focus
+  background-color: rgba(0,0,0,0.00) !important
+
+.rwt__tab
+  cursor: pointer
+
+.tab
+  background-color: #FFFFFF
+  padding: 10px 0 !important
+  border: 0
+  width: 100px
+  color: #4e618d
+  outline: none
+  cursor: pointer
+  @media screen and (max-width: 480px)
+    width: calc(100%/3)
+
+.container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  font-size: 12px
+
+  .info
+    display: flex
+    flex-direction: column
+    width: calc(100% / 3 - 14px)
+    padding: 20px
+    box-shadow: 0 0 3px -1px rgb(179, 179, 179)
+    margin: 7px
+    box-sizing: border-box
+    @media (max-width: 700px)
+      width: calc(100% / 2 - 14px)
+    @media (max-width: 400px)
+      width: calc(100% - 14px)
+
+    .row
+      display: flex
+      margin: 5px 0
+
+      .img
+        width: 100%
+        object-fit: contain
+        object-position: center
+        height: 100px
+
+      .user
+        color: #9CA8B7
+        margin: 0 3px
+
+      .suggestion
+        color: #4e618d
+        margin: 0 3px
+        word-break: break-all
+
+      .accept
+        color: #33CC33
+        font-size: 16px
+        font-weight: 300
+        margin: 0 3px
+
+      .reject
+        color: #9CA8B7
+        font-size: 16px
+        font-weight: 300
+        margin: 0 3px
+
+      .favorite
+        display: flex
+        justify-content: space-between
+        width: 100%
+        margin: 3px 3px 0 3px
+
+        .true
+          justify-self: flex-end
+          font-size: 18px
+          color: #ffca29
+        .false
+          font-size: 18px
+          color: #9CA8B7
+
+        .chat
+          font-size: 18px
+          color: #1271e8
+
+
+    .icons
+      display: flex
+      justify-content: space-between
+      margin: 3px 3px 0 3px
+      width: 100%
+      i:first-child
+        font-size: 18px
+        color: #33CC33
+      i:nth-child(2)
+        font-size: 18px
+        color: #FF4D4D
+
+  .notEntries
+    font-size: 14px
+    margin: 15px 0
+    width: 100%
+    text-align: center
+    color: #4e618d
+
+.modal
+  display: flex
+  flex-direction: column
+  padding: 0 40px
+  box-sizing: border-box
+  text-align: center
+  color: #4e618d
+  @media screen and (max-width: 480px)
+    padding: 20px 0 0 0
+
+  span
+    font-size: 16px
+    margin-bottom: 20px
+
+  .buttons
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+.containerImg
+  display: flex
+  padding: 20px
+
+  img
+    object-position: center
+    object-fit: contain
+    width: 100%
+    height: 100%
+
+

@@ -1,0 +1,55 @@
+%img
+  width: 48px
+  height: 48px
+  margin: 20px 3px
+
+.container
+  height: 350px
+  max-width: 236px
+  background-color: #FFFFFF
+  flex-direction: column
+  text-align: center
+  color: #333
+  padding: 15px
+  box-sizing: border-box
+  margin: 15px
+  flex: 1
+  &:hover
+    cursor: pointer
+    box-shadow: 0 7px 23px -5px rgba(0,0,0,0.75)
+    .line
+      border: 0.5px solid #28d2d0
+    .img
+      display: none
+    .imgColor
+      display: flex
+  @media screen and (max-width: 480px)
+    margin: 10px
+
+  .img
+    display: flex
+    justify-content: center
+    img
+      @extend %img
+
+  .imgColor
+    display: none
+    justify-content: center
+    img
+      @extend %img
+
+  .name
+    margin: 10px 0
+    font-weight: 600
+
+  .line
+    width: 60px
+    border: 0.5px solid #ccc
+    margin: 15px auto
+
+  .description
+    font-size: 14px
+    line-height: 1.4
+
+.darkTheme
+  background-color: #F5F5F5

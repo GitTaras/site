@@ -1,0 +1,144 @@
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+  height: 100%
+
+  .wrapperTag
+    display: flex
+    justify-content: center
+    width: 100%
+    background-color: #465B87
+    padding: 25px 0
+    box-sizing: border-box
+
+    .tag
+      color: white
+      width: 100%
+      font-size: 18px
+      font-weight: 500
+      line-height: 1.1
+      max-width: 1140px
+      margin: 0 15px
+
+  .wrapperText
+    display: flex
+    justify-content: center
+    width: 100%
+
+    .text
+      display: flex
+      margin: 30px 15px
+      font-size: 14px
+      line-height: 1.42857143
+      color: #333
+      max-width: 1140px
+
+
+  .paymentBox
+    display: flex
+    flex-direction: column
+    width: 90%
+    background-color: #F4F6F6
+    border: 1px solid #b7b7b7
+    max-width: 555px
+    margin: 15px 0
+    padding: 25px
+    box-sizing: border-box
+
+    @media (max-width: 780px)
+      max-width: none
+
+    .amount
+      font-size: 18px
+      font-weight: 500
+      line-height: 1.1
+      padding: 0 10px
+      text-align: center
+      box-sizing: border-box
+
+    .line
+      width: 96%
+      border-top: 1px solid #eee
+      margin: 20px 10px
+      box-sizing: border-box
+
+.inputWrapper
+  display: flex
+  flex-direction: column
+
+  .row
+    display: flex
+    justify-content: space-between
+    @media (max-width: 780px)
+      flex-direction: column
+
+    .item
+      display: flex
+      flex-direction: column
+      width: 100%
+      padding: 0 10px
+      box-sizing: border-box
+      margin: 10px 0
+
+      span
+        font-weight: 400
+        font-size: 13px
+        margin: 7px 2px
+
+      .containerError
+        display: flex
+        border: 1px solid #b72522
+        font-size: 13px
+        color: #b72522
+        padding: 5px 15px
+        box-sizing: border-box
+        justify-content: center
+        margin: 7px 0
+
+    .resume
+      display: flex
+      flex-direction: column
+      margin: 0 13px
+
+      .total
+        font-size: 20px
+        margin: 3px 0
+        @media screen and (max-width: 480px)
+          font-size: 16px
+
+      .priceTotal
+        font-size: 25px
+        margin: 3px 0
+        @media screen and (max-width: 480px)
+          font-size: 18px
+
+    Button
+      @media screen and (max-width: 480px)
+        margin: 0
+
+  .containerAgreement
+    display: flex
+    padding: 16px
+    align-items: center
+
+    span
+      padding-left: 10px
+      font-weight: 400
+      font-size: 13px
+      a
+        color: #337ab7
+        padding-left: 5px
+        text-decoration: none
+
+  .serverError
+    display: flex
+    justify-content: center
+    color: #b72522
+    border: 1px solid #b72522
+    font-size: 13px
+    padding: 5px 15px
+    box-sizing: border-box
+    margin: 10px
+
+

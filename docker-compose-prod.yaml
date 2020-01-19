@@ -1,0 +1,57 @@
+version: '2'
+services:
+
+  client-prod:
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile-prod
+    environment:
+      NODE_ENV: production
+    depends_on:
+      - server-prod
+    volumes_from:
+      - server-prod:ro
+    ports:
+      - "80:80"
+
+  server-prod:
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile-prod
+
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db-prod
+      - mongo-prod
+    volumes:
+      - ./var/www/html/images:/var/www/html/images
+
+  db-prod:
+    image: postgres:10
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=project-prod
+    ports:
+      - "5432:5432"
+
+  mongo-prod:
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_ROOT_DATABASE=chat
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles --logpath=/dev/null
+
+volumes:
+  server-prod:
+  client-prod:

@@ -1,0 +1,158 @@
+.default
+  border-radius: 4px
+  color: white
+  width: 100%
+  border: 0
+  font-size: 17px
+  font-weight: 500
+  display: flex
+  justify-content: center
+  outline: none
+  align-items: center
+  &:focus
+    outline: none
+
+.create
+  @extend .default
+  background-color: #28d2d0
+  min-height: 64px
+  text-transform: uppercase
+  display: flex
+  justify-content: center
+  align-items: center
+
+.sign
+  @extend .default
+  background: #3ea9f5
+  border: 1px solid rgba(255,255,255,0.77)
+  font-size: 18px
+  font-weight: 600
+  line-height: 22px
+  width: 98px
+  height: 44px
+  min-width: 98px
+  align-items: center
+
+.disabled
+  opacity: .3
+
+%navigation
+  font-size: 15px
+  line-height: 21px
+  padding: 15px 45px
+  box-sizing: border-box
+  font-weight: 700
+  color: #FFFFFF
+  text-transform: uppercase
+  text-align: center
+  border: 0
+  border-radius: 6px
+  margin: 15px
+  align-items: center
+
+.back
+  @extend %navigation
+  //width: 140px
+  background: #888
+  width: 100%
+  padding: 15px
+
+.next
+  @extend %navigation
+  width: 275px
+  background: #f3875d
+  outline: none
+  @media (max-width: 480px)
+    width: 100%
+    padding: 15px
+
+.question
+  padding: 15px 30px
+  border: 2px solid #fff
+  color: #fff
+  border-radius: 5px
+  font-size: 18px
+  background: transparent
+  text-transform: uppercase
+  align-items: center
+  outline: none
+  &:hover
+    background-color: white
+    color: #28D2D1
+    cursor: pointer
+
+.addContest
+  @extend .create
+  width: 300px
+  min-height: 45px
+  margin-bottom: 20px
+  font-size: 14px
+  @media screen and (max-width: 480px)
+    width: 75vw
+
+.modalEntry
+  width: 80px
+  border: 0
+  border-radius: 4px
+  color: #FFFFFF
+  background-color: #9CA8B7
+  padding: 5px
+  margin: 0 10px
+  align-items: center
+  outline: none
+
+.suggestIdea
+  background: transparent
+  color: #28D2D1
+  border: 0
+  outline: none
+  font-weight: 500
+  font-size: 18px
+  align-items: center
+  &:focus
+    outline: none
+
+.entry
+  @extend .create
+  background-color: transparent
+  color: #28D2D1
+  border: 2px solid #28D2D1
+  cursor: pointer
+  outline: none
+  align-items: center
+  &:hover
+    color: #FFFFFF
+    background-image: linear-gradient(to right, #c89dff, #28d2d1)
+    border: 0
+    outline: none
+
+.filter
+  border: 1px solid #4f68cc
+  background-color: transparent
+  color: #4f68cc
+  padding: 8px 16px
+  border-radius: 4px
+  width: 100px
+  font-weight: 500
+  align-items: center
+  outline: none
+  &:focus
+    outline: none
+
+.home
+  @extend .default
+  border: 1px solid #28D2D1
+  color: #4f68cc
+  text-transform: uppercase
+  min-height: 64px
+  background-color: transparent
+  &:hover
+    background-color: #28D2D1
+    cursor: pointer
+
+.white
+  @extend .default
+  background-color: #FFFFFF
+  min-height: 64px
+  color: black
+

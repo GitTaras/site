@@ -1,0 +1,59 @@
+version: '2'
+services:
+
+  front-react:
+    build:
+      context: ./client
+
+    environment:
+      NODE_ENV: development
+    depends_on:
+      - server-dev
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    ports:
+      - "3000:3000"
+      - "4001:4001"
+
+  server-dev:
+    build:
+      context: ./server
+
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3001:3001"
+    depends_on:
+      - db-dev
+      - mongo-dev
+    volumes:
+      - ./var/www/html/images:/var/www/html/images
+      - ./server:/server
+      - /server/node_modules
+
+  db-dev:
+    image: postgres:10
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=project-dev
+    ports:
+      - "5432:5432"
+
+  mongo-dev:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_ROOT_DATABASE=chat
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles --logpath=/dev/null
+
+volumes:
+  server-dev:

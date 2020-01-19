@@ -1,0 +1,49 @@
+.container
+  display: flex
+  border-bottom: 1px solid #e2e2e2
+  height: 40px
+  justify-content: center
+
+  .wrapper
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-width: 1170px
+    padding: 10px 0
+    box-sizing: border-box
+
+    .logo
+      align-items: center
+      height: 100%
+      display: flex
+      padding: 0 13px
+      box-sizing: border-box
+      cursor: pointer
+      font-size: 14px
+      @media screen and (max-width: 480px)
+        padding: 0 5px
+
+      img
+        width: 100px
+        margin: 0 3px
+        color: #333
+        @media screen and (max-width: 480px)
+          width: 70px
+
+    .authorization
+      display: flex
+      align-items: center
+      border-left: 1px solid #e2e2e2
+      padding: 0 10px
+      box-sizing: border-box
+
+      .sign
+        border-right: 1px solid #e2e2e2
+        color: #9CA8B7
+        padding: 0 10px
+        box-sizing: border-box
+        cursor: pointer
+        text-align: center
+        @media screen and (max-width: 480px)
+          font-size: 12px
+          padding: 0 5px

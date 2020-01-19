@@ -1,0 +1,215 @@
+%userInitials
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #28D2D1
+  text-transform: uppercase
+  color: #FFFFFF
+
+.container
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  flex-direction: column
+  max-height: 80%
+  height: 500px
+  position: fixed
+  bottom: 0
+  right: 0
+  z-index: 10
+  margin: 10px 20px
+  &.false
+    height: auto
+  @media screen and (max-width: 480px)
+    margin: 0
+    height: 100%
+    max-height: none
+    box-sizing: border-box
+
+
+  .mainBtn
+    display: flex
+    background-color: #727CF5
+    border-radius: 100%
+    width: 46px
+    height: 46px
+    min-width: 46px
+    min-height: 46px
+    justify-content: center
+    align-items: center
+    margin: 10px
+
+    .iconDots
+      width: 48px
+
+  .totalAmount
+    display: flex
+    margin-right: 8px
+    margin-bottom: -23px
+    z-index: 0
+    background: red
+    color: white
+    border-radius: 50%
+    height: 17px
+    width: 17px
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    padding: 10px
+    box-sizing: border-box
+
+  .header
+    display: flex
+    background-color: #727CF5
+    height: 45px
+    line-height: 45px
+    margin-top: 0
+    margin-bottom: auto
+    align-items: center
+
+    .arrowBack
+      margin: 5px 10px
+
+    .nameRecipient
+      color: #ffffff
+      font-size: 18px
+      align-self: center
+      margin-left: 15px
+
+    .title
+      color: #FFFFFF
+      font-size: 20px
+      align-self: center
+      margin: 0 auto
+
+  .wrapper
+    display: flex
+    flex-direction: column
+    width: 400px
+    background-color: #FFFFFF
+    height: 100%
+    justify-content: flex-end
+    box-shadow: 0 0 15px -1px #d8d8d8
+    &.false
+      display: none
+    @media screen and (max-width: 480px)
+      width: 100vw
+      height: calc(100% - 56px)
+
+    .mainField
+      display: flex
+      flex-direction: column
+      overflow-y: auto
+      height: inherit
+
+      .chat
+        display: flex
+        margin: 5px 10px
+        border-bottom: 1px solid #f5f5f5
+        padding: 5px 10px
+        box-sizing: border-box
+        overflow: hidden
+        cursor: pointer
+        align-items: center
+        @media screen and (max-width: 480px)
+          margin: 0
+
+        .messageInfo
+          display: flex
+          flex-direction: column
+          flex: 1
+          overflow: hidden
+          @media screen and (max-width: 480px)
+            font-size: 14px
+
+          span:first-child
+            font-weight: 500
+
+          span:last-child
+            color: #787c80
+            width: 100%
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            display: block
+
+        .timeInChat
+          display: flex
+          font-size: 12px
+
+        .status
+          width: 16px
+          margin: 0 5px
+
+        .unreadMess
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          background: #dfe5ff
+          text-align: center
+          display: flex
+          justify-content: center
+          align-content: center
+          font-size: 14px
+          margin: 0 5px
+
+      .rightSide
+        align-self: flex-end
+        background-color: #dfe5ff !important
+
+      .dateChat
+        margin: 4px 0
+        display: flex
+        justify-content: center
+        user-select: none
+        -webkit-touch-callout: none
+        span
+          background-color: #c7c7c7
+          border-radius: 12px
+          padding: 0 10px
+          color: white
+          box-sizing: border-box
+          font-size: 13px
+
+      .message
+        display: flex
+        width: 70%
+        margin: 5px 10px
+        word-break: break-all
+        background-color: #eaeaea
+        border-radius: 10px
+        padding: 5px 10px
+        box-sizing: border-box
+        flex-direction: column
+        height: 100%
+        @media screen and (max-width: 480px)
+          font-size: 13px
+
+        .time
+          display: flex
+          justify-content: flex-end
+          font-size: 10px
+          align-items: flex-end
+
+        .status
+          width: 16px
+          height: 16px
+          margin: 0 5px
+
+    .sender
+      display: flex
+      align-self: flex-end
+      height: 60px
+      align-items: center
+      margin: 10px
+      width: 95%
+      @media screen and (max-width: 480px)
+        width: 90%
+        input
+          padding: 0
+          font-size: 14px
+
+      .sendIcon
+        width: 25px
+

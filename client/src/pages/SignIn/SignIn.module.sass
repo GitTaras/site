@@ -1,0 +1,73 @@
+.wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  background-color: #3EA9F5
+  height: 100vh
+  flex: 1
+  justify-content: stretch
+  overflow: auto
+
+  .header
+    display: flex
+    width: 90%
+    justify-content: space-between
+    max-width: 1010px
+    padding: 26px 49px
+    box-sizing: border-box
+    @media (max-width: 480px)
+      padding: 13px 5px
+
+  .container
+    display: flex
+    flex: 1
+    flex-direction: column
+    padding: 0 20px
+    box-sizing: border-box
+    width: 100%
+    max-width: 600px
+
+    .mainText
+      color: #FFFFFF
+      text-transform: uppercase
+      font-size: 35px
+      font-weight: 600
+      letter-spacing: 0
+      margin: 100px 0 30px 0
+      text-align: center
+
+    .serverError
+      display: flex
+      justify-content: center
+      color: #FFFFFF
+      border: 1px solid #b72522
+      font-size: 13px
+      padding: 5px 15px
+      box-sizing: border-box
+      margin: 7px 0
+
+    .containerInput
+      display: flex
+      margin: 5px 0
+
+    .containerError
+      display: flex
+      border: 1px solid #b72522
+      font-size: 13px
+      color: white
+      padding: 5px 15px
+      box-sizing: border-box
+      justify-content: center
+      margin: 7px 0
+
+    .remember
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      width: 100%
+      color: white
+      margin: 10px 10px 15px 10px
+      span
+        font-size: 13px
+        padding-left: 5px
+

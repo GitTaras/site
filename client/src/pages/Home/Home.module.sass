@@ -1,0 +1,469 @@
+%step
+  display: flex
+  width: 100%
+
+%StepWrapper
+  display: flex
+  width: 100%
+  max-width: 1170px
+  margin: 10px auto
+  padding: 20px 35px
+  box-sizing: border-box
+  @media screen and (max-width: 980px)
+    flex-direction: column-reverse
+    align-items: center
+    text-align: center
+
+%stepsText
+  display: flex
+  flex-direction: column
+  justify-content: center
+  flex: 1
+
+%stepsImg
+  max-width: 600px
+  width: 100%
+
+%nameStep
+  font-size: 22px
+  margin: 20px 0
+
+%stepsItem
+  display: flex
+  align-items: center
+  margin: 10px 0
+
+%centerText
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 30px 0
+  text-align: center
+
+%hr
+  width: 80px
+  height: 3px
+  border: 0
+  margin: 20px
+
+.container
+  display: flex
+  width: 100%
+  justify-content: center
+  font-family: 'Raleway', sans-serif
+  flex-direction: column
+
+  .wrapper
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 1170px
+    margin: 10px auto
+    padding: 0 20px
+    box-sizing: border-box
+
+    .logoStart
+      display: flex
+      justify-content: space-between
+      margin: 20px 0
+      padding: 10px
+      box-sizing: border-box
+      @media screen and (max-width: 480px)
+        display: none
+
+      img
+        width: 165px
+        height: 53px
+
+      .logoStartNavigation
+        display: flex
+        align-items: center
+        @media screen and (max-width: 480px)
+          flex-direction: column
+
+        .logoStartBtn
+          display: flex
+          width: 180px
+          height: 64px
+
+        .myDashboard
+          color: #4e618d
+          margin: 0 50px
+          cursor: pointer
+          @media screen and (max-width: 480px)
+            margin: 20px
+
+    .title
+      display: flex
+      flex-direction: column
+      justify-content: center
+      text-align: center
+
+      .mainText
+        font-weight: 500
+        font-size: 36px
+        margin: 15px 0
+
+      .firstLine
+        font-weight: 300
+        line-height: 1.5
+
+      .secondLine
+        font-weight: 300
+        line-height: 1.5
+
+      .btnStartContest
+        display: flex
+        max-width: 550px
+        width: 100%
+        margin: 30px auto
+        align-items: center
+        @media screen and (max-width: 480px)
+          flex-direction: column
+
+        span
+          margin: 20px
+
+    .conclusionBtn
+      display: flex
+      width: 300px
+      margin: 30px auto
+
+    .centerText
+      @extend %centerText
+
+      span
+        font-size: 28px
+        font-weight: 500
+        margin: 10px 0
+
+      .extraText
+        font-size: 16px
+        font-weight: 300
+        text-align: center
+        line-height: 1.5
+
+      hr
+        @extend %hr
+        background-color: #4f68cc
+
+    .steps
+      display: flex
+      margin: 20px 0
+
+      .StepWrapper
+        @extend %StepWrapper
+
+        .stepsImg
+          @extend %stepsImg
+
+        .stepsText
+          @extend %stepsText
+
+          .nameStep
+            @extend %nameStep
+
+          .stepsItem
+            @extend %stepsItem
+
+            i
+              color: #28d2d0
+              margin-right: 7px
+
+            span
+              font-size: 18px
+
+
+    .advantages
+      display: flex
+      @media screen and (max-width: 980px)
+        flex-direction: column
+
+      .item
+        display: flex
+        flex-direction: column
+        flex: 1
+
+        img
+          height: 80px
+          width: 85px
+
+        .text
+          font-size: 22px
+          font-weight: 500
+
+        .description
+          font-weight: 300
+          font-size: 14px
+          line-height: 1.4
+          margin: 10px 10px 0 0
+
+  .slider
+    display: flex
+    width: 100%
+    background-color: #FAFAFA
+    margin: 10px auto
+    padding: 30px 20px
+    box-sizing: border-box
+
+    .sliderWrapper
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 1170px
+      margin: 10px auto
+      align-items: center
+
+      .sliderBtn
+        display: flex
+        width: 270px
+        height: 64px
+        margin-top: 40px
+
+  .brands
+    display: flex
+    background-color: #FAFAFA
+    width: 100%
+    margin: 50px 0
+
+    .brandWrapper
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 1170px
+      margin: 10px auto
+      padding: 20px 50px
+      box-sizing: border-box
+
+      .firstLineBrands
+        display: flex
+        //height: 40px
+        height: auto
+        justify-content: space-between
+        flex-flow: row wrap
+        @media screen and (max-width: 480px)
+          justify-content: center
+
+        img
+          width: 120px
+          @media screen and (max-width: 480px)
+            margin: 10px
+
+      .secondLineBrands
+        display: flex
+        @media screen and (max-width: 480px)
+          flex-direction: column
+
+        .counting
+          display: flex
+          justify-content: center
+          flex: 1
+          margin: 20px 0
+
+          span:first-child
+            font-weight: 500
+            font-size: 22px
+
+          span:last-child
+            font-size: 20px
+            font-weight: 300
+
+        .border
+          border-left: 1px solid #9a9a9a
+          border-right: 1px solid #9a9a9a
+
+  .secondStep
+    @extend %step
+    background-color: #28D2D0
+
+    .secondStepWrapper
+      @extend %StepWrapper
+
+      .stepsImg
+        @extend %stepsImg
+
+      .stepsText2
+        @extend %stepsText
+        color: #FFFFFF
+
+        .nameStep2
+          @extend %nameStep
+
+        .stepsItem2
+          @extend %stepsItem
+
+          i
+            color: #FFFFFF
+            margin-right: 7px
+
+          span
+            font-size: 18px
+
+  .thirdStep
+    @extend %step
+    background-color: #f9f9f9
+
+    .thirdStepWrapper
+      @extend %StepWrapper
+
+      .stepsImg
+        @extend %stepsImg
+
+      .stepsText3
+        @extend %stepsText
+
+        .nameStep3
+          @extend %nameStep
+
+        .stepsItem3
+          @extend %stepsItem
+
+          i
+            color: #28D2D0
+            margin-right: 7px
+
+          span
+            font-size: 18px
+
+  .customersSay
+    display: flex
+    width: 100%
+    background-color: #2B62EC
+    justify-content: center
+
+    .customersSayWrapper
+      display: flex
+      flex-direction: column
+      max-width: 1170px
+      align-items: center
+      width: 100%
+      margin: 20px
+
+      .customerText
+        @extend %centerText
+        color: #FFFFFF
+
+        span
+          font-size: 28px
+          font-weight: 500
+          margin: 10px 0
+
+        hr
+          @extend %hr
+          background-color: #FFFFFF
+
+      .customersSayBtn
+        display: flex
+        width: 250px
+        margin: 30px 0
+
+  .basement
+    display: flex
+    width: 100%
+    background-color: #2E3535
+    justify-content: center
+    padding: 45px
+    box-sizing: border-box
+
+    .basementWrapper
+      display: flex
+      max-width: 1170px
+      justify-content: space-between
+      padding: 0 20px
+      box-sizing: border-box
+      @media screen and (max-width: 980px)
+        flex-direction: column
+
+      .basementBtn
+        display: flex
+        max-width: 400px
+        width: 100%
+        height: 64px
+        flex: 1
+        @media screen and (max-width: 980px)
+          align-self: center
+          margin: 10px 0
+
+      .basementCol
+        display: flex
+        margin-left: 20px
+        flex: 1
+        @media screen and (max-width: 980px)
+          margin: 10px 0
+
+        .circleImg
+          display: flex
+          background-color: #28D2D0
+          border-radius: 100%
+          height: 70px
+          padding: 0 20px
+          box-sizing: border-box
+          width: 70px
+          align-items: center
+          justify-content: center
+          margin: 0 15px
+          @media screen and (max-width: 740px)
+            display: none
+
+        .basementText
+          display: flex
+          flex-direction: column
+          color: #FFFFFF
+
+          span:first-child
+            font-weight: 500
+            font-size: 22px
+            margin: 10px 0
+
+          span:last-child
+            font-size: 14px
+            font-weight: 300
+
+
+  .questions
+    display: flex
+    width: 100%
+    max-width: 1170px
+    margin: 40px auto
+    justify-content: space-between
+    align-items: center
+    padding: 0 20px
+    box-sizing: border-box
+    @media screen and (max-width: 980px)
+      flex-direction: column
+    .questionsText
+      display: flex
+      flex-direction: column
+      line-height: 2
+      @media screen and (max-width: 980px)
+        align-items: center
+
+      span:first-child
+        font-weight: 500
+        font-size: 20px
+
+      span:last-child
+        font-size: 18px
+
+      .questionsPhone
+        display: flex
+        color: #2B62ED
+        font-size: 22px
+        align-items: center
+
+        img
+          height: 22px
+
+    .questionsBtn
+      display: flex
+      width: 270px
+      height: 64px
+
+
+
+
+
+
+
+
+

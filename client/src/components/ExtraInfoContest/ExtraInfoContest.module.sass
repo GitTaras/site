@@ -1,0 +1,67 @@
+.extraInfo
+  display: flex
+  flex-direction: column
+  max-width: 200px
+  width: 100%
+  box-shadow: 0 0 15px -1px rgb(179, 179, 179)
+  margin-left: 50px
+  height: fit-content
+  @media (max-width: 1150px)
+    margin-left: 0
+    margin-bottom: 30px
+    max-width: none
+
+  .cost
+    display: flex
+    color: #FFFFFF
+    background-color: #4e618d
+    width: 200px
+    align-items: center
+    padding: 15px
+    height: 50px
+    box-sizing: border-box
+    @media (max-width: 1150px)
+      width: 100%
+      justify-content: center
+
+    i
+      margin: 10px
+
+  .timeAndPrice
+    display: flex
+    padding: 15px
+    box-sizing: border-box
+    flex-direction: column
+    @media (max-width: 1150px)
+      flex-direction: row
+    @media (max-width: 480px)
+      flex-direction: column
+      padding: 15px 10px
+
+    .timeCol
+      display: flex
+      flex-direction: column
+      flex: 1
+
+      .timeRow
+        display: flex
+        font-size: 13px
+        margin: 5px
+        color: #757575
+        align-items: baseline
+
+        i
+          margin-right: 5px
+          color: #757575
+
+        .prizeIcon
+          color: #8ACA6B
+
+        .trophy
+          color: gold
+          font-size: 14px
+
+        .bookmark
+          margin-left: 1px
+          font-size: 14px
+          color: #4e618d

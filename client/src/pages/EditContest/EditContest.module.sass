@@ -1,0 +1,230 @@
+.form
+  display: flex
+  flex: 1
+
+  .mainContainer
+    display: flex
+    flex: 1
+
+    .briefWrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 20px 0
+      flex: 1
+
+      .content
+        display: flex
+        width: 80%
+        justify-content: center
+        max-width: 1050px
+        @media (max-width: 1150px)
+          flex-direction: column-reverse
+
+        .briefCardContainer
+          display: flex
+          flex-direction: column
+          padding: 30px 30px 10px 30px
+          box-shadow: 0 0 15px -1px rgb(179, 179, 179)
+          @media (max-width: 480px)
+            padding: 3px
+
+          .container
+            display: flex
+            background-color: #F9FAFB
+            padding: 30px 35px
+            box-sizing: border-box
+            width: 100%
+            margin-bottom: 20px
+            justify-content: space-between
+            @media (max-width: 480px)
+              flex-direction: column
+
+            .wrapper
+              display: flex
+              flex-direction: column
+
+              .row
+                display: flex
+                padding: 15px 0
+                box-sizing: border-box
+                flex-flow: wrap
+                align-items: center
+
+                .title
+                  color: #4e618d
+
+                .industry
+                  width: 71%
+                  margin: 5px 0 0 5px
+                  @media (max-width: 600px)
+                    width: 100%
+
+                .description
+                  color: #9CA8B7
+                  margin: 0 10px
+
+                .pastTime
+                  color: #9CA8B7
+                  font-size: 14px
+
+              .checkboxStyles
+                display: flex
+                align-items: center
+                padding: 0
+                margin-left: 10px
+                color: #9ca8b7
+                input
+                  margin-right: 10px
+
+              .deletePictureIcon
+                display: flex
+                color: red
+                margin-bottom: -10px
+                margin-left: -5px
+                z-index: 1
+
+              .photoContest
+                max-width: 100%
+                object-fit: contain
+                object-position: left
+                height: 300px
+                @media (max-width: 480px)
+                  height: 150px
+
+              .wrapperFile
+                display: flex
+                //padding: 20px
+                box-sizing: border-box
+                max-width: 1000px
+                width: 100%
+                align-items: baseline
+                margin: 15px 0
+                cursor: pointer
+                @media (max-width: 580px)
+                  flex-direction: column
+                  align-items: center
+                  margin: 0
+
+                .fileContainer
+                  overflow: hidden
+                  position: relative
+                  //padding: 5px 0
+                  box-sizing: border-box
+                  font-size: 14px
+                  //width: 120px
+                  border-radius: 4px
+                  text-align: center
+                  margin-bottom: 0
+                  color: #4e618d
+                  @media screen and (max-width: 480px)
+                    width: 100%
+
+                  input
+                    cursor: pointer
+                    opacity: 0
+                    position: absolute
+                    right: 0
+                    top: 0
+
+              .containerError
+                display: flex
+                border: 1px solid #b72522
+                font-size: 13px
+                color: #b72522
+                padding: 5px 15px
+                box-sizing: border-box
+                justify-content: center
+                margin: 7px 1px
+
+              .business
+                padding: 0
+                color: #9CA8B7
+                margin: 0 !important
+                width: 100%
+                .textarea
+                  width: 100%
+                  height: 72px
+                  border-radius: 4px
+                  border: 2px solid #D0D0D0
+                  outline: none
+                  padding: 5px
+                  box-sizing: border-box
+                  font-size: 13px
+                  resize: none
+                  color: #656b7a
+                  &:focus
+                    border: 2px solid #28d2d0
+                    outline: none
+
+              .price
+                color: #465a89
+                margin: 0 5px
+
+            .edit
+              color: #4e618d
+              cursor: pointer
+
+        .extraInfo
+          display: flex
+          flex-direction: column
+          max-width: 200px
+          width: 100%
+          box-shadow: 0 0 15px -1px rgb(179, 179, 179)
+          margin-left: 50px
+          height: fit-content
+          @media (max-width: 1150px)
+            margin-left: 0
+            margin-bottom: 30px
+            max-width: none
+
+          .cost
+            display: flex
+            color: #FFFFFF
+            background-color: #4e618d
+            width: 200px
+            align-items: center
+            padding: 15px
+            height: 50px
+            box-sizing: border-box
+            @media (max-width: 1150px)
+              width: 100%
+              justify-content: center
+
+            i
+              margin: 10px
+
+          .timeAndPrice
+            display: flex
+            flex-direction: column
+            padding: 15px
+            box-sizing: border-box
+
+            .timeRow
+              display: flex
+              font-size: 12px
+              margin: 5px
+              color: #757575
+
+              i
+                margin-right: 5px
+                color: #757575
+
+              .prizeIcon
+                color: #8ACA6B
+
+
+      .tabs
+        display: flex
+        border-bottom: 1px solid #D7DBDD
+
+        .tab
+          cursor: pointer
+          padding: 5px 30px
+          font-size: 14px
+          border-bottom: 2px solid transparent
+
+        .selected
+          border-bottom-color: #28d2d0
+
+

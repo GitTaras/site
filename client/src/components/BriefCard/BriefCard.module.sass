@@ -1,0 +1,151 @@
+.container
+  display: flex
+  background-color: #F9FAFB
+  padding: 30px 25px
+  box-sizing: border-box
+  width: 100%
+  margin-bottom: 20px
+  &:hover
+    background-color: #efefef
+  @media (max-width: 990px)
+    flex-direction: column
+  @media (max-width: 480px)
+    padding: 15px 10px
+
+  .info
+    display: flex
+    flex: 2
+    flex-direction: column
+    margin: 0 10px
+
+
+    .title
+      display: flex
+      align-items: center
+
+      .name
+        color: #556da5
+        font-size: 18px
+        font-weight: 500
+        margin: 10px 0
+
+      .id
+        color: #9CA8B7
+        margin: 0 15px
+        font-size: 12px
+
+    .type
+      color: #4e618d
+      font-size: 12px
+      margin: 5px 0
+
+    .description
+      color: #666
+      font-size: 13px
+      line-height: 18px
+      word-break: break-all
+      margin: 19px 0
+      max-height: 83px
+      overflow: hidden
+
+    .extraInfo
+      display: flex
+      @media screen and (max-width: 480px)
+        justify-content: space-around
+
+      .costAndStatus
+        display: flex
+        margin: 10px 50px 10px 0
+        @media screen and (max-width: 480px)
+          margin: 10px 0
+
+        span
+          color: #465a89
+          font-size: 15px
+
+        .icons
+          color: #465a89
+          margin: 0 5px
+
+          .activeIcon
+            color: #8ACA6B
+
+          .inactiveIcon
+            color: #727CF5
+
+          .closedIcon
+            color: #F35D5D
+
+  .dataWrapper
+    display: flex
+    flex-direction: column
+    flex: 1
+    margin: 0 10px
+
+    .data
+      display: flex
+      align-items: center
+      justify-content: space-around
+      background-color: #FFFFFF
+      height: 70px
+      @media screen and (max-width: 480px)
+        font-size: 14px
+
+      .entries
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        .textInfo
+          font-size: 15px
+          color: #8c8e92
+          margin-top: 3px
+
+        .iconAndInfo
+          display: flex
+          color: #465a89
+
+          span:last-child
+            margin-right: 10px
+
+          .icons
+            color: #465a89
+            margin: 0 10px
+
+      .line
+        display: flex
+        border-left: 2px solid #9CA8B7
+
+      .leftTime
+        display: flex
+        flex-direction: column
+        align-items: center
+        color: #465a89
+
+
+        span:last-child
+          font-size: 15px
+          color: #8c8e92
+          margin-top: 3px
+
+    .winner
+      display: flex
+      background-color: #AAAAAA
+      color: #FFFFFF
+      align-items: center
+      justify-content: center
+      padding: 13px
+      box-sizing: border-box
+      text-align: center
+      @media screen and (max-width: 480px)
+        padding: 5px 0
+
+      span:last-child
+        margin: 0 10px
+        @media screen and (max-width: 480px)
+          margin: 0 5px
+
+.inactiveItem
+  opacity: .6
+  background-color: #FFFFFF
+

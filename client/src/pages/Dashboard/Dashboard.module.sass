@@ -1,0 +1,89 @@
+.container
+  display: flex
+  flex: 1
+
+  .briefWrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 20px 0
+    flex: 1
+
+    .deficitEntries
+      color: #3c4e73
+      font-size: 20px
+      padding: 10px
+      text-align: center
+
+    .briefCardContainer
+      display: flex
+      flex-direction: column
+      width: 80%
+      height: fit-content
+      justify-content: center
+      padding: 30px 30px 10px 30px
+      box-shadow: 0 0 15px -1px rgb(179, 179, 179)
+      max-width: 850px
+      margin: 5px 0
+      @media screen and (max-width: 480px)
+        width: 75vw
+        padding: 3px
+
+    .message
+      color: #4e618d
+      font-size: 20px
+      padding: 20px
+      text-align: center
+
+    .cardContainer
+      display: flex
+      flex-direction: column
+      width: 80%
+      height: fit-content
+      justify-content: center
+      padding: 30px
+      box-shadow: 0 0 15px -1px #b3b3b3
+      max-width: 850px
+      box-sizing: border-box
+      @media screen and (max-width: 480px)
+        width: 75vw
+        padding: 3px
+
+      .suggestion
+        display: flex
+        flex-direction: column
+        width: 100%
+        cursor: pointer
+        &:hover
+          background-color: #efefef
+
+        .suggestionImg
+          box-shadow: 0 0 4px -1px rgb(179, 179, 179)
+          margin: 3px 0
+          padding: 15px
+          box-sizing: border-box
+          display: flex
+          justify-content: center
+
+          .img
+            object-fit: cover
+            height: 300px
+            max-width: 100%
+            &:hover
+              opacity: .75
+            @media screen and (max-width: 480px)
+              height: 150px
+
+    .navigationUp
+      display: flex
+      justify-content: center
+      margin: 20px
+      font-size: 28px
+      color: #4e618d
+      cursor: pointer
+
+
+
+
+
+

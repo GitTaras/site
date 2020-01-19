@@ -1,0 +1,80 @@
+%large
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 120px
+  height: 120px
+  margin: 20px
+  font-size: 50px
+  @media screen and (max-width: 860px)
+    width: 100px
+    height: 100px
+
+%small
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 30px
+  height: 30px
+  font-size: 16px
+
+%chatNotification
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 45px
+  height: 45px
+  font-size: 20px
+  margin-right: 10px
+  @media screen and (max-width: 480px)
+    width: 40px
+    height: 40px
+
+.userPhoto
+  display: flex
+  &.large
+    @extend %large
+  &.small
+    @extend %small
+  &.chatNotification
+    @extend %chatNotification
+  &.chatDialog
+    @extend %chatNotification
+
+  .profilePicture
+    border-radius: 100%
+    object-fit: cover
+    object-position: center
+    width: 100%
+    height: 100%
+    &.chatNotification
+      width: 45px
+      height: 45px
+
+.userInitials
+  display: flex
+  border-radius: 100%
+  align-items: center
+  justify-content: center
+  background-color: #28D2D1
+  text-transform: uppercase
+  color: #FFFFFF
+  &.large
+    @extend %large
+  &.small
+    @extend %small
+  &.chatNotification
+    @extend %chatNotification
+    background-color: #F4F6F6
+    color: #4c84a9
+  &.chatDialog
+    @extend %chatNotification
+
+.hide
+  @media screen and (max-width: 320px)
+    display: none !important
+
+
+
+
+
